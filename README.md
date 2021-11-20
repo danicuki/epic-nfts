@@ -1,15 +1,19 @@
-# Basic Sample Hardhat Project
+# NFT minting project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project demonstrates how easy it is to deploy an NFT.
 
-Try running some of the following tasks:
+# How to make it run
+## Step 1
+ - Create an account at alchemy.com
+ - Create a project
+ - Modify `hardhat.config.js`, put your project API url there
+ - Put your wallet private key in this file (never submit it to git!)
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+## Step 2
+  Run:
+  
+   `npx hardhat run scripts/deploy.js --network rinkeby`
+
+That's it!
+
+
