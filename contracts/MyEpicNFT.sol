@@ -28,7 +28,10 @@ contract MyEpicNFT is ERC721URIStorage {
         _safeMint(msg.sender, newItemId);
 
         // Set the NFTs data.
-        _setTokenURI(newItemId, "https://jsonkeeper.com/b/0M3L");
+        _setTokenURI(
+            newItemId,
+            "data:application/json;base64,ewogICJuYW1lIjogIkRhbmljdWtpIEF3ZXNvbWUgTkZUIiwKICAiZGVzY3JpcHRpb24iOiAiQW4gU1ZHIHNlbGYgaG9zdGVkIE5GVCIsCiAgImltYWdlIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIQnlaWE5sY25abFFYTndaV04wVW1GMGFXODlJbmhOYVc1WlRXbHVJRzFsWlhRaUlIWnBaWGRDYjNnOUlqQWdNQ0F6TlRBZ016VXdJajRLSUNBZ0lEeHpkSGxzWlQ0dVltRnpaU0I3SUdacGJHdzZJSGRvYVhSbE95Qm1iMjUwTFdaaGJXbHNlVG9nYzJGdWN5MXpaWEpwWmpzZ1ptOXVkQzF6YVhwbE9pQXhPSEI0T3lCOVBDOXpkSGxzWlQ0S0lDQWdJRHh5WldOMElIZHBaSFJvUFNJeE1EQWxJaUJvWldsbmFIUTlJakV3TUNVaUlHWnBiR3c5SW5CMWNuQnNaU0lnTHo0S0lDQWdJRHgwWlhoMElIZzlJalV3SlNJZ2VUMGlOVEFsSWlCamJHRnpjejBpWW1GelpTSWdaRzl0YVc1aGJuUXRZbUZ6Wld4cGJtVTlJbTFwWkdSc1pTSWdkR1Y0ZEMxaGJtTm9iM0k5SW0xcFpHUnNaU0krUkdGdWFXTjFhMmtnUVhkbGMyOXRaU0JPUmxROEwzUmxlSFErQ2p3dmMzWm5QZ289Igp9"
+        );
         console.log(
             "An NFT w/ ID %s has been minted to %s",
             newItemId,
